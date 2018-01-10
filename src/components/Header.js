@@ -21,7 +21,7 @@ class Header extends Component {
     return (
       <nav className="pt-navbar pt-elevation-3" style={{backgroundColor:'#ecf0f1'}}>
         <div className="pt-navbar-group pt-align-left">
-          <Link className="pt-navbar-heading" to="/" aria-label="Home">AggieDefenders</Link>
+          <Link className="pt-navbar-heading" to="/#" aria-label="Home">AggieDefenders</Link>
           {this.props.authenticated
               ? <Link className="pt-button pt-minimal pt-icon-document" to="/files" aria-label="Files">Files</Link>
               : null

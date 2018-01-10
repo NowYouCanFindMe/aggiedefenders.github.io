@@ -94,7 +94,7 @@ class Login extends Component {
           </label>
           <input style={{width: "100%"}} type="submit" className="pt-button pt-intent-primary" value="Log In"></input>
            <hr style={{marginTop: "10px", marginBottom: "10px"}}/>
-          <a className="pt-elevation-1" href="/password-reset" style={{fontSize: '10px', justifyContent: 'center', textAlign: 'center'}}><i>Reset Password</i></a>
+          <a className="pt-elevation-1" href="#/password-reset" style={{fontSize: '10px', justifyContent: 'center', textAlign: 'center'}}><i>Reset Password</i></a>
         </form>
       </div>
     )

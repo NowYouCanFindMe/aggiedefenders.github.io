@@ -19,7 +19,7 @@ class Input extends Component {
   createMessage(event) {
     
     event.preventDefault()
-
+    const date= Date.now();
     const title = this.titleInput.value
   firebase.auth().onAuthStateChanged((user) => {
   if (user) {
@@ -33,11 +33,14 @@ class Input extends Component {
     const messages = {};
     const id = Date.now();
     const email = user.email;
+    const name = email.match(/^([^@]*)@/)[1];
     messages[id] = {
       id: id,
       content: title,
       time: id,
-      owner: email
+      owner: email,
+      name: name,
+     
     };
 
     this.setState({messages});

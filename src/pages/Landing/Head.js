@@ -88,7 +88,7 @@ class Head extends Component {
                         </div>
                          <div className="row">
                             <div className='col-md-3'></div>
-                            <div className='col-md-6'><Button href="/login" outline color="primary">LOGIN</Button></div>
+                            <div className='col-md-6'><Button href="#/login" outline color="primary">LOGIN</Button></div>
                             <div className='col-md-3'></div>
                         </div>
                         <div className="row">
